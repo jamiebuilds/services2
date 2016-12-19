@@ -1,0 +1,35 @@
+{
+  "name": "services",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node --harmony-async-await -- server.js"
+  },
+  "dependencies": {
+    "axios": "^0.15.3",
+    "babel-cli": "^6.18.0",
+    "babel-plugin-react-require": "^3.0.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0",
+    "pify": "^2.3.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "styled-jsx": "^0.1.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-3",
+      "react"
+    ],
+    "plugins": [
+      "styled-jsx/babel",
+      "react-require"
+    ]
+  }
+}
